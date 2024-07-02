@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 15s  # How frequently to scrape targets
+  evaluation_interval: 15s  # How frequently to evaluate rules
+
+scrape_configs:
+  - job_name: 'backup-ro'  # Replace with your job name
+    static_configs:
+      - targets: ['192.168.100.23:9100']  # Replace with your application service name and port
